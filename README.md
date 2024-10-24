@@ -1,8 +1,8 @@
-![Heliactyl](https://cdn.discordapp.com/attachments/1063585626022223892/1065304573058764850/PylexPlus_2.png)
+![NexaDash](https://cdn.discordapp.com/attachments/1063585626022223892/1065304573058764850/PylexPlus_2.png)
 
 <hr>
 
-# Heliactyl • The modern client panel for Pterodactyl
+# NexaDash • The modern client panel for Pterodactyl
 
 All features:
 - Resource Management (Use it to create servers, gift them, etc)
@@ -18,21 +18,10 @@ All features:
 - Join for Rewards (join discord servers for coins)
 - Admin (set/add/remove coins & resources, create/revoke coupons)
 - API (for bots & other things)
-
-# What happened to 13.x and 15.x?
-
-Due to major issues with both versions, we've decided to come back to v12 and recontinue it
-The latest versions will be on v12 now
-
-# Warning
-
-We cannot force you to keep the "Powered by Heliactyl" in the footer, but please consider keeping it. It helps getting more visibility to the project and so getting better. We won't do technical support for installations without the notice in the footer. We may DMCA the website in certain conditions.
-Please do keep the footer though.
-
 <hr>
 
 # Install Guide
-## 1. Configuring heliactyl
+## 1. Configuring NexaDash
 ### Pterodactyl method (easiest)
 Warning: You need Pterodactyl already set up on a domain for this method to work
 
@@ -73,7 +62,7 @@ To stop ctrl + C
 
 <strong>2.5</strong>  Run `ufw allow 80` and `ufw allow 443` on the vps
 
-<strong>2.6</strong>  Run `certbot certonly -d <Your Heliactyl Domain>` then do 1 and put your email
+<strong>2.6</strong>  Run `certbot certonly -d <Your NexaDash Domain>` then do 1 and put your email
 
 <strong>2.7</strong>  Run `nano /etc/nginx/sites-enabled/heliactyl.conf`
 
@@ -114,25 +103,6 @@ location / {
 
 <hr>
 
-# Updating 
-
-From Heliactyl v11/v13 or Dashactyl v0.4 to Heliactyl v12:
-1. Store certain things such as your api keys, discord auth settings, etc in a .txt file
-2. Download database.sqlite 
-3. Delete all files off the server (or delete and remake the folder if done in ssh)
-4. Upload the latest Heliactyl v12 release and unzip it
-5. Upload database.sqlite and reconfigure settings.json
-
-From Heliactyl v15:
-- This is currently not possible due to major differences between the versions
-- You will have to install Heliactyl v12 and use a new database
-
-Move to a newer Heliactyl v12 release:
-1. Delete everything except settings.json, database.sqlite
-2. Put the files that you didn't delete into a zip file
-3. Upload the latest Heliactyl v12 release and unzip it
-4. Remove settings.json and database.sqlite
-5. Unzip the zip with your old settings.json and database.sqlite
 
 # Running in background / on startup, on a server instead of within Pterodactyl
 
@@ -151,11 +121,7 @@ Making the dashboard runs on startup:
 - Note: Supported init systems are `systemd`, `upstart`, `launchd`, `rc.d`
 - To stop your Heliactyl from running in the background, use `pm2 unstartup`
 
-To stop a currently running Heliactyl instance, use `pm2 stop heliactyl`
+To stop a currently running NexaDash instance, use `pm2 stop heliactyl`
 
-# Legacy Deprecation Notice
-
-Heliactyl v6, v7, v8, v9, v10, v11, v13, v15 is now deprecated as listed in our Discord and should not be used.
-Please update to Heliactyl v12.
 
 
